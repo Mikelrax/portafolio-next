@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 export const MobileNav = () => {
   const [nav, setNav] = useState(false);
@@ -16,7 +17,7 @@ export const MobileNav = () => {
           Daniel Pérez<span className="text-primary">.</span>
         </Link>
         <button onClick={handleNav}>
-          <img
+          <Image
             src={`${nav ? "/close-nav.svg" : "/open-nav.svg"}`}
             alt="handle-nav"
             className="size-6"
