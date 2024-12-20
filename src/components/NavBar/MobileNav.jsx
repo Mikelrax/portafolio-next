@@ -19,15 +19,15 @@ export const MobileNav = () => {
         <button onClick={handleNav}>
           <Image
             src={`${nav ? "/close-nav.svg" : "/open-nav.svg"}`}
-            alt="handle-nav"
-            className="size-6"
+            alt="Navigation Icon"
+            width={32}
+            height={32}
           />
         </button>
       </li>
       <div
-        className={`mobile-nav flex-col gap-4 pt-2 items-center ${
-          nav ? "flex" : "hidden"
-        }`}
+        className={`mobile-nav flex-col gap-4 pt-2 items-center ${nav ? "flex" : "hidden"
+          }`}
       >
         <Link
           href="/#home"

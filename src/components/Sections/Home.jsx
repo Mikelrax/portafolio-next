@@ -27,8 +27,7 @@ const Home = () => {
             Contactame
           </Link>
           <Link
-            href="/Daniel-perez-resume.pdf"
-            download="Daniel-perez-resume.pdf"
+            href="https://drive.google.com/file/d/1wGAsNDHTbRzba5-klbfDFFqe4rxlf_b-/view?usp=sharing"
             target="_blank"
             className="rounded-full text-secondary font-bold border border-secondary py-2 px-4 hover:bg-secondary hover:text-white transition-all ease-in-out duration-300"
           >
@@ -42,6 +41,8 @@ const Home = () => {
           src="https://avatars.githubusercontent.com/u/115122920?v=4"
           alt="Imagen de Daniel Pérez"
           className="mt-14 lg:mt-0 size-60 lg:size-80 rounded-full hover:grayscale-0 transition-all ease-in-out duration-300"
+          width={60}
+          height={60}
         />
       </div>
     </section>
