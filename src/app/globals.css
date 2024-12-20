@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply text-secondary;
+    @apply box-content;
+    @apply scroll-smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply overflow-hidden;
+}
+
+p {
+    @apply text-base;
+    @apply overflow-hidden;
+}
+
+@media screen and (max-width: 640px){
+    h1, h2, h3, h4, h5, h6 {
+        @apply text-xs;
+    }
+    p {
+        @apply text-base;
+    }
+}
+
+@media screen and (min-width: 640px){
+    p {
+        @apply text-2xl;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+section {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 20%;
+    animation-fill-mode: both;
+}
+
+
