@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const SocialMediaLink = ({ link, src, alt, size }) => {
   return (
@@ -8,7 +9,7 @@ const SocialMediaLink = ({ link, src, alt, size }) => {
       target="_blank"
       className="hover:scale-110 transition-all ease-in-out duration-300"
     >
-      <img src={src} alt={alt} className={size} />
+      <Image src={src} alt={alt} className={size} />
     </Link>
   );
 };

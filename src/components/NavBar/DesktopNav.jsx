@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+
 export const DesktopNav = () => {
   return (
     <ul className="hidden lg:flex lg:flex-row lg:justify-between items-center">

@@ -1,5 +1,6 @@
 import React from "react";
 import SocialMediaLink from "@/components/SocialMediaLink";
+import Image from "next/image";
 
 const ContactPage = () => {
   return (
@@ -29,7 +30,7 @@ const ContactPage = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <img
+        <Image
           src="https://avatars.githubusercontent.com/u/115122920?v=4"
           alt="Imagen de Leonardo Valdez"
           className="mt-14 lg:mt-0 size-60 lg:size-80 rounded-full hover:grayscale-0 transition-all ease-in-out duration-300"

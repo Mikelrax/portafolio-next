@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -37,7 +38,7 @@ const Home = () => {
       </div>
 
       <div className="flex justify-center">
-        <img
+        <Image
           src="https://avatars.githubusercontent.com/u/115122920?v=4"
           alt="Imagen de Daniel Pérez"
           className="mt-14 lg:mt-0 size-60 lg:size-80 rounded-full hover:grayscale-0 transition-all ease-in-out duration-300"
